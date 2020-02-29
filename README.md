@@ -12,6 +12,10 @@ Because MainCardLayout is a ViewGroup, client code have access to the onClickLis
 
 The included sample app will start up and add a bunch of different views to demonstrate how to use the two views.
 
+![alt text](https://github.com/iamkevinluc/CustomCardViewSamples/blob/master/Screenshot_1582942718.png "Screen Shot")
+
+
+
 # Next steps
 1. Is it possible to create a customview that the attributes can be customizable? e.g. <MainCardLayout custom:icon="" custom:mainText="" ...
 2. How do we style the card so that the layout is more conformant to the spec?  Or is it better to make those values customizable too?
