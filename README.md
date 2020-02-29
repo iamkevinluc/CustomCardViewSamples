@@ -12,7 +12,7 @@ Because MainCardLayout is a ViewGroup, client code have access to the onClickLis
 
 The included sample app will start up and add a bunch of different views to demonstrate how to use the two views.
 
-<img src="./Screenshot_1582942718.png" width="500" height="20" />
+<img src="./Screenshot_1582942718.png" width="100" height="400" />
 
 
 # Next steps
