@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">CardView Application</string>
+    <string name="custom_card_title">This is a custom card title resource</string>
 </resources>

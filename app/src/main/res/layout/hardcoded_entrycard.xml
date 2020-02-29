@@ -1,45 +1,40 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- <com.example.myapplication.MainCardLayout -->
+<?xml version="1.0" encoding="utf-8"?><!-- <com.example.myapplication.MainCardLayout -->
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/hardcoded_cardview"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:gravity="center"
-    android:id="@+id/hardcoded_cardview"
-    >
+    android:orientation="vertical">
 
     <androidx.cardview.widget.CardView
-        android:layout_gravity="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        card_view:cardCornerRadius="4dp"
-        android:orientation="horizontal"
-        >
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/bank_icon"
-        android:layout_margin="16dp"
-        android:layout_gravity="start"
-        />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Update your Barclays connection in the next 15 days"
-        android:layout_margin="16dp"
         android:layout_gravity="center"
-        />
+        android:orientation="horizontal"
+        card_view:cardCornerRadius="4dp">
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/chevron"
-        android:layout_margin="16dp"
-        android:layout_gravity="end"
-        />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_margin="16dp"
+            android:src="@drawable/bank_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="16dp"
+            android:text="Update your Barclays connection in the next 15 days" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_margin="16dp"
+            android:src="@drawable/chevron" />
     </androidx.cardview.widget.CardView>
 
 

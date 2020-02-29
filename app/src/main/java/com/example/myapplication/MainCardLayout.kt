@@ -1,7 +1,6 @@
 package com.example.myapplication
 
 import android.content.Context
-import android.graphics.drawable.ColorDrawable
 import android.util.AttributeSet
 import android.view.View
 import android.widget.ImageView
@@ -26,6 +25,17 @@ class MainCardLayout(context: Context, attributeSet: AttributeSet) : LinearLayou
     fun setMainText(newText: String) {
         val mainTextView = findViewById<TextView>(R.id.title)
         mainTextView.text = newText
+    }
+
+    fun setMainText(newTextResource: Int) {
+        val mainTextView = findViewById<TextView>(R.id.title)
+        val newText = context.resources.getString(newTextResource)
+        mainTextView.text = newText
+    }
+
+    fun setChevronIcon(chevronIcon: Int) {
+        val bankIconView = findViewById<ImageView>(R.id.chevron)
+        bankIconView.setImageResource(chevronIcon)
     }
 
 }
