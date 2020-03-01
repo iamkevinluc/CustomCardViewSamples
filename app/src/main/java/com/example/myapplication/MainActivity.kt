@@ -65,7 +65,7 @@ class MainActivity : AppCompatActivity() {
         activity_main_view.addView(customLayout)
 
         val cardView =
-            customLayout.findViewById<MainCardLayout>(R.id.simplecustom_cardview)
+            customLayout.findViewById<MainCardLayout>(R.id.cardview)
         cardView.setChevronVisibility(withChevron)
         cardView.setMainText(mainTextResource)
         cardView.setBankIcon(icon)
@@ -85,7 +85,7 @@ class MainActivity : AppCompatActivity() {
         activity_main_view.addView(customLayout)
 
         val cardView =
-            customLayout.findViewById<MainCardLayout>(R.id.simplecustom_cardview)
+            customLayout.findViewById<MainCardLayout>(R.id.cardview)
         cardView.setChevronVisibility(withChevron)
         cardView.setMainText(mainText)
         cardView.setBankIcon(icon)

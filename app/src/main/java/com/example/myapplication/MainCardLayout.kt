@@ -4,10 +4,10 @@ import android.content.Context
 import android.util.AttributeSet
 import android.view.View
 import android.widget.ImageView
-import android.widget.LinearLayout
 import android.widget.TextView
+import androidx.cardview.widget.CardView
 
-class MainCardLayout(context: Context, attributeSet: AttributeSet) : LinearLayout(context, attributeSet) {
+class MainCardLayout(context: Context, attributeSet: AttributeSet) : CardView(context, attributeSet) {
 
     fun setChevronVisibility(visible: Boolean) {
         val chevron = findViewById<ImageView>(R.id.chevron)
@@ -18,23 +18,23 @@ class MainCardLayout(context: Context, attributeSet: AttributeSet) : LinearLayou
     }
 
     fun setBankIcon(resourceId: Int) {
-        val bankIconView = findViewById<ImageView>(R.id.icon)
+        val bankIconView = getChildAt(0) as ImageView
         bankIconView.setImageResource(resourceId)
     }
 
     fun setMainText(newText: String) {
-        val mainTextView = findViewById<TextView>(R.id.title)
+        val mainTextView = getChildAt(1) as TextView
         mainTextView.text = newText
     }
 
     fun setMainText(newTextResource: Int) {
-        val mainTextView = findViewById<TextView>(R.id.title)
+        val mainTextView = getChildAt(1) as TextView
         val newText = context.resources.getString(newTextResource)
         mainTextView.text = newText
     }
 
     fun setChevronIcon(chevronIcon: Int) {
-        val bankIconView = findViewById<ImageView>(R.id.chevron)
+        val bankIconView = getChildAt(2) as ImageView
         bankIconView.setImageResource(chevronIcon)
     }
 
